@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padString</title>
+</head>
+<body>
+    <script>
+        function padString(message, len, symbol, flag) {
+            if (message.length > len) {
+                return console.log(message);
+            }
+            if (flag == 'слева') {
+                return console.log(message.padStart(len, symbol));
+            }
+            return console.log(message.padEnd(len, symbol));
+            }
+
+            padString('Sabina', 10, '*', 'справа')
+    </script>
+</body>
+</html>
